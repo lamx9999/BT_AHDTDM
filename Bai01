@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    // Duyệt qua tất cả các số có 2 chữ số
+    for (int i = 10; i < 100; i++) {
+        // Kiểm tra nếu i chia hết cho 7
+        if (i % 7 == 0) {
+            // In ra số đó
+            printf("%d\n", i);
+        }
+    }
+    return 0;
+}
