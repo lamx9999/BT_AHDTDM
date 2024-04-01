@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    // Duyệt qua tất cả các số có 2 chữ số
+// Hàm in ra các số nguyên có 2 chữ số và là bội của 7
+void printMultiplesOfSeven() {
     for (int i = 10; i < 100; i++) {
-        // Kiểm tra nếu i chia hết cho 7
         if (i % 7 == 0) {
-            // In ra số đó
             printf("%d\n", i);
         }
     }
+}
+
+int main() {
+    printf("Cac so nguyen co 2 chu so va la boi cua 7:\n");
+    printMultiplesOfSeven();
     return 0;
 }
