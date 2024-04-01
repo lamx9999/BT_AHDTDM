@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+// Hàm kiểm tra một số có phải là số chính phương không
+int isSquare(int number) {
+    int sqrtNum = (int)sqrt(number);
+    return sqrtNum * sqrtNum == number;
+}
+
+// Hàm đếm và in ra các số chính phương nhỏ hơn n
+void countAndPrintSquares(int n) {
+    int count = 0;
+    printf("Cac so chinh phuong nho hon %d la: ", n);
+    for (int i = 1; i < n; i++) {
+        if (isSquare(i)) {
+            printf("%d ", i);
+            count++;
+        }
+    }
+    printf("\nTong so chinh phuong nho hon %d la: %d\n", n, count);
+}
+
+// Hàm main
+int main() {
+    int n = 50;
+    countAndPrintSquares(n);
+    return 0;
+}
